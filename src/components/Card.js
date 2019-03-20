@@ -3,15 +3,14 @@ import ColorPalette from './ColorPalette';
 import '../styles/card.css'
 
 export default class Card extends Component{
-
-      /* Manipulates String and Converts miltary time to regular time */
+      /* Manipulates string and converts miltary time to regular time */
       generateTime(dateCreated){
-        //manipulate what's received from API to just extract time
         let time = dateCreated.split(' ')[1].split(':');
         let hour = Number(time[0]);
         let minute = time[1];
         let suffix='';
         let standardHour;
+
         if(hour===0){
           standardHour = 12;
           suffix='AM'

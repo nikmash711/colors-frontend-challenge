@@ -10,3 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.time-updated{
+  float: right;
+}
