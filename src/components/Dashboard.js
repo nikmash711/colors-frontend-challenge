@@ -42,7 +42,6 @@ export default class Dashboard extends Component {
   }
 
   componentWillUnmount(){
-    //clear the interval when unmounting component
     clearInterval(this.refreshInterval);
   }
 
