@@ -8,7 +8,7 @@ export default function Card (props){
       <section className="info">
         <h2>{props.title}</h2>
           <h4>by {props.userName} at {props.dateCreated}</h4>
-          <div>
+          <div className="box">
             <span>{props.numViews} views</span>
             <span>{props.numVotes} votes</span>
           </div>

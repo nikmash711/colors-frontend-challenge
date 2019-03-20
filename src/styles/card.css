@@ -6,3 +6,16 @@
   justify-content: space-between;
   width: 50%;
 }
+
+.box{
+  background: #2C6FA4;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.box span{
+  padding: 5px;
+}

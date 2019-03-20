@@ -31,7 +31,7 @@ export default class Dashboard extends Component {
   render() {
     return (
       <header>
-        <h1 className='title'>
+        <h1 className='website-title'>
           ColourLovers. 
           <strong> Live.</strong>
         </h1>
