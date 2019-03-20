@@ -1,12 +1,18 @@
 body  {
-  background-color: #2487CB; /* For browsers that do not support gradients */
+  background-color: #2487CB; /* For browsers that don't support gradients */
   background-image: linear-gradient(to right, #2487CB , #4EAEE7); 
   color: white;
   font-family: 'Lato', sans-serif;
-  padding: 40px 100px;
+  padding: 40px 20px;
 }
 
 /*reset*/
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+@media(min-width:1350px){
+  body{
+    padding: 40px 100px;
+  }
 }
