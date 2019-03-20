@@ -1,0 +1,9 @@
+.color-palette{
+  display: flex;
+  flex-direction: row;
+}
+
+.color-strip{
+  height: 100px;
+  width: 30px;
+}

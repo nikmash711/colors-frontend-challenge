@@ -1,7 +1,12 @@
 body  {
   background-color: #2487CB; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, #2487CB , #4EAEE7); 
-  font-family: 'Lato', sans-serif;
   color: white;
-  padding: 50px;
+  font-family: 'Lato', sans-serif;
+  padding: 40px 100px;
+}
+
+/*reset*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }

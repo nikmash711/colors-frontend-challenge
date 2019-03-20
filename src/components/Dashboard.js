@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/dashboard.css';
-import Palette from './Palette';
+import Card from './Card';
 import $ from 'jquery';
 
 export default class Dashboard extends Component {
@@ -20,7 +20,7 @@ export default class Dashboard extends Component {
 
   generatePalettes(){
     return this.state.palettes.map((palette, index)=>{
-     return <Palette key={index} {...palette}/>
+     return <Card key={index} {...palette}/>
     })
   }
 
@@ -35,7 +35,7 @@ export default class Dashboard extends Component {
           ColourLovers. 
           <strong> Live.</strong>
         </h1>
-        <main>
+        <main className='card-list'>
           {this.generatePalettes()}
         </main>
       </header>
