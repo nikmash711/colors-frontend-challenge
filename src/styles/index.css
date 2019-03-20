@@ -1,0 +1,7 @@
+body  {
+  background-color: #2487CB; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #2487CB , #4EAEE7); 
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding: 50px;
+}
