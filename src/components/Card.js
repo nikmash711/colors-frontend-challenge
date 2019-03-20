@@ -1,19 +1,50 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ColorPalette from './ColorPalette';
 import '../styles/card.css'
 
-export default function Card (props){
+export default class Card extends Component{
+
+      /* Manipulates String and Converts miltary time to regular time */
+      generateTime(dateCreated){
+        //manipulate what's received from API to just extract time
+        let time = dateCreated.split(' ')[1].split(':');
+        let hour = Number(time[0]);
+        let minute = time[1];
+        let suffix='';
+        let standardHour;
+        if(hour===0){
+          standardHour = 12;
+          suffix='AM'
+        }
+        else if(hour>=1 && hour<=11){
+          standardHour = hour;
+          suffix='AM'
+        }
+        else if (hour===12){
+          standardHour = hour;
+          suffix='PM'
+        }
+        else{
+          standardHour = hour-12;
+          suffix = 'PM'
+        }
+        return `${standardHour}:${minute} ${suffix}`;
+      }
+
+  render(){
+
     return (
-     <section className="card">
-      <section className="info">
-        <h2>{props.title}</h2>
-          <h4>by {props.userName} at {props.dateCreated}</h4>
-          <div className="box">
-            <span>{props.numViews} views</span>
-            <span>{props.numVotes} votes</span>
-          </div>
+      <section className="card">
+       <section className="info">
+         <h2>{this.props.title}</h2>
+           <h4>by {this.props.userName} at {this.generateTime(this.props.dateCreated)}</h4>
+           <div className="box">
+             <span>{this.props.numViews} views</span>
+             <span>{this.props.numVotes} votes</span>
+           </div>
+       </section>
+       <ColorPalette colors={this.props.colors}/>
       </section>
-      <ColorPalette colors={props.colors}/>
-     </section>
-    );
+     );
+  }
 }
