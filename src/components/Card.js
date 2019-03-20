@@ -35,8 +35,8 @@ export default class Card extends Component{
     return (
       <section className="card">
        <section className="info">
-         <h2>{this.props.title}</h2>
-           <h4>by {this.props.userName} at {this.generateTime(this.props.dateCreated)}</h4>
+         <h2 className='palette-title'>{this.props.title}</h2>
+           <h4 className='by'> by {this.props.userName} at {this.generateTime(this.props.dateCreated)}</h4>
            <div className="box">
              <span>{this.props.numViews} views</span>
              <span>{this.props.numVotes} votes</span>

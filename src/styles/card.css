@@ -1,15 +1,26 @@
 .card {
   display: flex;
   flex-direction: row;
-  max-width: 600px;
   margin: 20px 0;
+  max-width: 600px;
   justify-content: space-between;
-  width: 50%;
+}
+
+.palette-title{
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.by{
+  padding-top: 5px;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .box{
   background: #2C6FA4;
   font-weight: bold;
+  font-size: 1.1rem;
   margin-top: 20px;
   padding: 10px;
   text-align: center;
@@ -18,4 +29,11 @@
 
 .box span{
   padding: 5px;
+}
+
+@media(min-width:1350px){
+  .card {
+    max-width: 550px;
+    width: 50%;
+  }
 }

@@ -50,17 +50,20 @@ export default class Dashboard extends Component {
     if(this.state.loading){
       return '';
     }
+
     return (
-      <header>
-        {this.state.lastUpdated && <span className="time-updated">Last Updated at {this.state.lastUpdated}</span>}
-        <h1 className='website-title'>
-          ColourLovers. 
-          <strong> Live.</strong>
-        </h1>
-        <main className='card-list'>
+      <main className="dashboard">
+        <header>
+          <h1 className='website-title'>
+            ColourLovers. 
+            <strong> Live.</strong>
+          </h1>
+          {this.state.lastUpdated && <span className="time-updated">Last Updated at {this.state.lastUpdated}</span>}
+        </header>
+        <section className='card-list'>
           {this.generatePalettes()}
-        </main>
-      </header>
+        </section>
+      </main>
     );
   }
 }
