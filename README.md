@@ -1,3 +1,5 @@
+# ColourLovers Live
+
 ColourLovers Live is an exploration of british spelling and intended to keep software engineers familiar with the latest trends in colour palettes. 🎨
 
 To be clear, this is not a complete or comprehensive spec, let me know if anything's unclear and we'll get it hammered out.
@@ -94,3 +96,7 @@ Use whatever library of your choice to hit the endpoint. jQuery even.
 6) Anything else that you'd like to share to showcase your talents!
 - The screenshots didn’t really show what it should look like on small mobile views, so I changed the design/sizing a tad bit so it can stay responsive down to 320px.
 - I had fun working on this challenge and would love to hear any type of feedback (whether it’s something I could have styled better, organized better, etc.) -- I’m always looking to improve so I would really appreciate it!
+
+## Screenshots 
+![Desktop Mockup](mockups/Nikkies-Desktop.png)
+![Mobile Mockup](mockups/Nikkies-Mobile.png)
