@@ -98,5 +98,6 @@ Use whatever library of your choice to hit the endpoint. jQuery even.
 - I had fun working on this challenge and would love to hear any type of feedback (whether it’s something I could have styled better, organized better, etc.) -- I’m always looking to improve so I would really appreciate it!
 
 ## Screenshots 
-![Desktop Mockup](mockups/Nikkies-Desktop.png)
-![Mobile Mockup](mockups/Nikkies-Mobile.png)
+<img src='./mockups/Nikkies-Desktop.png' alt='Desktop Screenshot' width='900px'/>
+
+<img src='./mockups/Nikkies-Mobile.png' alt='Mobile Screenshot' width='500px'/>
