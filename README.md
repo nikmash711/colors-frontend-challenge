@@ -88,6 +88,7 @@ Use whatever library of your choice to hit the endpoint. jQuery even.
 - With bigger projects I like to implement Sass so I can reuse variables instead of repeating colors/sizes/fonts all over the place, but didn’t think it was needed for the scope of this project.
 
 5) If you were to develop this front end further, what future features or improvements would you like to achieve?
+- I don't think the light blue gradient background is the best idea - especially since the page is going to be full of colors, it's almost guaranteed to fail to have a proper contrast with one or more of the colors on the page, which could make it hard for many users to see the color palette properly. 
 - I would capitalize the titles of each color palette so they look consistent. 
 - I would attach links to each palette so the user can click on the palette and it takes them to the palette on the website.
 - I would include the entire date under each card, not just the time - the time might be from the day before, but there is no distinction right now.
